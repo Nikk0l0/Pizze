@@ -5,7 +5,8 @@ class Pizza:
         self.diametro = diametro
     
     def area(self):
-        return  (r / 2 ) ** 2 * math.pi
+        return  (self.diametro / 2 ) ** 2 * math.pi
 
-prima = Pizza(4)
-print(prima)
+if __name__ == "__main__":
+    prima = Pizza(4)
+    print(prima.area())
